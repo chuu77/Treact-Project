@@ -1201,7 +1201,6 @@ footer {
   .subscribe__header,
   .subscribe__buttons {
     margin: 20px 0;
-    text-align: center;
   }
 
   .pricing__columns {
@@ -1210,6 +1209,7 @@ footer {
 
   .pricing__column {
     max-width: 50%;
+    margin: 4rem 1rem 0 1rem;
   }
 
   .testimonials__subheader {
@@ -1231,6 +1231,20 @@ footer {
 
   .footer__social--link {
     margin: 0 12px;
+  }
+
+  .row__testimonial {
+    flex-direction: column;
+  }
+  .testimonials__right--column {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonials__para {
+    text-align: center;
+    margin: 16px auto 0;
+    max-width: 80%;
   }
 }
 
