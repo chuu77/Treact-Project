@@ -1217,6 +1217,23 @@ footer {
   }
 }
 
+@media (max-width: 850px) {
+  .footer__copyright {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer__logo,
+  .copyright,
+  .footer__socials {
+    margin: 1.5rem 0;
+  }
+
+  .footer__social--link {
+    margin: 0 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .header__description {
     display: flex;
