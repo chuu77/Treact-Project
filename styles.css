@@ -47,6 +47,14 @@ img {
   display: block;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+}
+
 /*
 
 NAVIGATION
@@ -277,7 +285,7 @@ Features
 
 .service__img--wrapper .service__img {
   padding: 1.25rem;
-  border: 1px solid black;
+  border: 1px solid rgb(226, 232, 240);
   border-radius: 9999px;
   border-width: 1px;
   text-align: center;
@@ -336,6 +344,7 @@ QUALITY
   font-weight: 500;
   line-height: 1.5;
   color: #7c8ba1;
+  max-width: 36rem;
 }
 
 .quality__right--column {
@@ -352,7 +361,7 @@ QUALITY
   height: auto;
 }
 
-.btn__quality {
+.btn__column {
   margin-top: 32px;
 }
 
@@ -512,6 +521,8 @@ STEPS
 .pricing__column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
   margin-right: 2rem;
   margin-top: 4rem;
   border-radius: 0.5rem;
@@ -537,12 +548,41 @@ STEPS
   );
 }
 
-.pricing__color--green {
+.pricing__btn--green {
   background: linear-gradient(
     115deg,
     rgb(56, 178, 172) 0%,
     rgb(129, 230, 217) 100%
   );
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+}
+
+.pricing__btn--green:hover {
+  transform: translate(2px, -2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.pricing__btn--white {
+  background-color: white;
+  color: rgb(100, 21, 255);
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  transition: all 300ms ease;
+}
+
+.pricing__btn--white:hover {
+  transform: translate(2px, -2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  opacity: 0.8;
 }
 
 .pricing__red {
@@ -561,12 +601,21 @@ STEPS
   );
 }
 
-.pricing__color--red {
+.pricing__btn--red {
   background: linear-gradient(
     115deg,
     rgb(245, 101, 101) 0%,
     rgb(254, 178, 178) 100%
   );
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+}
+
+.pricing__btn--red:hover {
+  transform: translate(2px, -2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .pricing__top {
@@ -609,6 +658,7 @@ STEPS
   border-bottom: 2px;
   border-color: rgb(226, 232, 240);
   border-style: solid;
+  height: 100%;
 }
 
 .main__feature {
@@ -729,6 +779,7 @@ STEPS
   border-radius: 50px;
   transition: all 300ms ease;
   cursor: pointer;
+  height: 100%;
 }
 
 .arrow {
@@ -762,6 +813,10 @@ STEPS
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.faq__para {
+  text-align: center;
 }
 
 .faq__list {
@@ -840,4 +895,99 @@ STEPS
 .btn__contact--us:hover {
   background-color: white;
   color: rgb(52, 14, 128);
+}
+
+/*
+
+
+FOOTER
+
+
+*/
+
+footer {
+  background-color: #6415ff;
+}
+
+.footer__container {
+  padding: 6rem 3rem;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.footer__list {
+  margin-left: 20px;
+}
+
+.footer__list--title {
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.footer__list li {
+  margin-top: 16px;
+}
+
+.footer__link {
+  color: white;
+}
+
+.footer__divider {
+  margin: 4rem 0;
+  width: 100%;
+  border-color: rgb(226, 232, 240);
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-width: 1px;
+  opacity: 0.3;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.footer__img {
+  width: 2.5rem;
+  margin-right: 0.75rem;
+}
+
+.footer__socials {
+  color: black;
+}
+
+.footer__social--link {
+  padding: 0.7rem;
+  margin-right: 1rem;
+  border-radius: 9999px;
+  background-color: white;
+  text-align: center;
+}
+
+.footer__social--link i {
+  width: 1.25rem;
 }
